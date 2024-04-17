@@ -331,9 +331,17 @@ MEDIA QUIERIES
 
 */
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   body {
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+
+  .header__heading {
+    font-size: 36px;
+  }
+
+  .header__para {
+    font-size: 18px;
   }
 
   .modal {
@@ -361,6 +369,6 @@ MEDIA QUIERIES
     }
 
     .modal__title {
-        font-size: 26px;
+        font-size: 26px ;
     }
 }
