@@ -26,8 +26,9 @@ button {
 
 nav,
 header {
-  opacity: 100%;
-  transition: all 350 ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  transition: all 600ms 600ms ease;
 }
 
 .row {
@@ -93,8 +94,8 @@ nav {
 }
 
 .logo__wrapper {
-  width: 160px;
-  height: 100px;
+  width: 100%;
+  max-width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,8 +245,9 @@ MODAL
 
 .modal--open nav,
 .modal--open header {
-  opacity: 0%;
-  transition: 350ms all ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms ease;
 }
 
 .modal__container {
@@ -323,6 +325,40 @@ input:focus {
 .form__submit:active {
   background-color: #fff;
   color: black;
+}
+
+/*
+
+ABOUT US 
+
+*/
+
+#about-us {
+  height: 100vh;
+  display: flex;
+}
+
+.about-us__img--wrapper {
+  width: 100%;
+  max-width: 50vw;
+}
+
+.about-us__img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-us__info--container {
+  width: 100%;
+  max-width: 50vw;
+}
+
+.about-us__info--wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   height: 100%;
 }
 
 /*
